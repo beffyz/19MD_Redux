@@ -2,7 +2,7 @@ import React, { FC, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { AppDispatch } from '../../store';
 import { addToCart } from '../../Reducers/CartReducer';
-import { getProductById } from '../../Data/ProductsData';
+import { getProductById } from '../../Data/VehicleData';
 import styles from './ProductCard.module.scss';
 
 type ProductCardProps = {

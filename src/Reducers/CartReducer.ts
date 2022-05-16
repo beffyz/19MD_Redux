@@ -1,20 +1,20 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { Product } from '../Models/ProductModel';
+import { Vehicle } from '../Models/VehicleModel';
 
 export const cartSlice = createSlice({
   name: 'cart',
   initialState: {
-    value: [] as Product[],
+    value: [] as Vehicle[],
   },
   reducers: {
-    addToCart: (state: {value: Product[]}, action: {payload: Product}) => {
+    addToCart: (state: {value: Vehicle[]}, action: {payload: Vehicle}) => {
       state.value = [...state.value, action.payload];
     },
-    increment: (state: {value: Product[]}, action: {payload: number}) => {
+    increment: (state: {value: Vehicle[]}, action: {payload: number}) => {
       // @ts-ignore
       state.value.find((n) => n.id === action.payload).count += 1;
     },
-    decrement: (state: {value: Product[]}, action: {payload: number}) => {
+    decrement: (state: {value: Vehicle[]}, action: {payload: number}) => {
       // @ts-ignore
       state.value.find((n) => n.id === action.payload).count -= 1;
     },

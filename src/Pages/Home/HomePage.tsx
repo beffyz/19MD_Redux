@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import { Product } from '../../Models/ProductModel';
-import { getProducts } from '../../Data/ProductsData';
+import { Vehicle } from '../../Models/VehicleModel';
+import { getProducts } from '../../Data/VehicleData';
 import ProductCard from '../../components/ProductCard/ProductCard';
 import styles from './HomePage.module.scss';
 
 const HomePage = () => {
-  const [products, setProducts] = useState<Product[]>([]);
+  const [products, setProducts] = useState<Vehicle[]>([]);
 
   useEffect(() => {
     setProducts(getProducts());
