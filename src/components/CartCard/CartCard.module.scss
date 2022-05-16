@@ -1,0 +1,22 @@
+.card {
+  display: flex;
+  border: 1px solid black;
+  margin-top: 20px;
+}
+
+.card__box {
+  display: flex;
+}
+
+.img {
+  max-width: 300px;
+  width: 100%;
+}
+
+.card__details {
+  margin: 20px 0 0 15px;
+}
+
+.card__title {
+  margin-bottom: 15px;
+}

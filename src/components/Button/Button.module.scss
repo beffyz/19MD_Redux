@@ -1,0 +1,23 @@
+.button {
+  border-radius: 10px;
+  border: none;
+  background-color: darkgrey;
+  color: white;
+  font-weight: 600;
+  transition: background-color 1s;
+
+  &:hover {
+    cursor: pointer;
+    background-color: lightgreen;
+  }
+}
+
+.button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+
+  &:hover {
+    opacity: 0.5;
+    outline: none;
+  }
+}
